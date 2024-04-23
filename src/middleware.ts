@@ -8,5 +8,6 @@ export const config = {
     "/",
     "/(api|trpc)(.*)",
     "/api/webhooks/clerk",
+    "/api/webhooks/stripe",
   ],
 };
