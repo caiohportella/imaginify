@@ -1,5 +1,6 @@
 import MobileNav from "@/components/shared/MobileNav";
 import Sidebar from "@/components/shared/Sidebar";
+import { Toaster } from "@/components/ui/toaster";
 import { PropsWithChildren } from "react";
 
 const RootLayout = ({ children }: PropsWithChildren) => {
@@ -11,6 +12,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <div className="root-container">
         <div className="wrapper">{children}</div>
       </div>
+      <Toaster />
     </main>
   );
 };
